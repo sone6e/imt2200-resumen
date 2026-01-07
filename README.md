@@ -10,7 +10,7 @@ https://github.com/Proyecto-IMT-2200/2025-2
 ## Qué hice yo (mi aporte)
 
 ### 1) Pregunta 3 — Distribución socioeconómica por universidad (GSE)
-Analicé cómo se distribuyen los estudiantes que ingresan a educación superior según **grupo socioeconómico (AB/C/D/E)** usando el campo de ingreso familiar disponible en los datos DEMRE entre 2004 y 2025. :contentReference[oaicite:1]{index=1}
+Analicé cómo se distribuyen los estudiantes que ingresan a educación superior según **grupo socioeconómico (AB/C/D/E)** usando el campo de ingreso familiar disponible en los datos DEMRE entre 2004 y 2025.
 
 **Metodología (resumen):**
 - Extracción de tramo numérico **1–12** desde “ingreso familiar”.
@@ -18,7 +18,7 @@ Analicé cómo se distribuyen los estudiantes que ingresan a educación superior
   - 1–2 → **E**
   - 3–4 → **D**
   - 5–8 → **C**
-  - 9–12 → **AB** :contentReference[oaicite:2]{index=2}
+  - 9–12 → **AB** 
 - Conteo por universidad y conversión a porcentaje (100% por universidad), ordenando por % de AB para comparar mejor.
 
 > Nota: En el repo grupal se especifica que la **Pregunta 3** fue mi responsabilidad.
@@ -40,7 +40,7 @@ Además participé en el notebook de modelamiento y comparación de regresiones 
 ---
 
 ## Datos
-Los datos se obtienen desde DEMRE (Portal de Transparencia) o desde el link compartido por el equipo en el repo oficial. :contentReference[oaicite:6]{index=6}  
+Los datos se obtienen desde DEMRE (Portal de Transparencia) o desde el link compartido por el equipo en el repo oficial.
 **Este repo no incluye datasets** (solo código/analysis).
 
 ---
