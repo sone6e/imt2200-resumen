@@ -12,7 +12,7 @@ Analice como se distribuyen los estudiantes que ingresan a la educacion superior
 - Orden de universidades por porcentaje del grupo AB para comparar mejor
 
 ## Grafico principal
-<img src="regunta3.png" alt="Distribucion socioeconomica por universidad" width="900">
+<img src="pregunta3.png" alt="Distribucion socioeconomica por universidad" width="900">
 
 ## Metodologia
 1. Desde el campo ingreso familiar extraje un tramo numerico entre 1 y 12
