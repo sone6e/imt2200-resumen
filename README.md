@@ -1,57 +1,49 @@
-# Distribución socioeconómica por universidad (GSE) — DEMRE 2004–2025
+# Pregunta 3 Distribucion socioeconomica por universidad con DEMRE 2004 a 2025
 
-**Proyecto académico grupal (IMT-2200).**  
-Este repositorio es un **resumen de mi aporte** dentro del proyecto del equipo.
+Proyecto academico grupal IMT 2200  
+Este repositorio resume mi aporte en la Pregunta 3
 
-## Highlights (resultados clave)
-- **Ranking por universidad** según % del grupo **AB** (comparación directa entre instituciones).
-- **Distribución porcentual AB/C/D/E** por universidad, construida desde el campo *ingreso familiar* (tramos 1–12).
-- **Entregable principal:** gráfico de barras horizontales apiladas + tabla porcentual por institución.
+## Resumen
+Analice como se distribuyen los estudiantes que ingresan a la educacion superior segun grupo socioeconomico usando ingreso familiar en datos DEMRE entre 2004 y 2025
 
-> (Opcional: agrega 1–2 hallazgos concretos)
-> - Hallazgo: **[EJ: “Las universidades X, Y, Z concentran mayor %AB”]**
-> - Hallazgo: **[EJ: “Se observa mayor presencia de C/D en…”]**
+## Highlights
+- Distribucion porcentual por universidad para los grupos AB C D E
+- Promedio del periodo 2004 a 2025 para ver una composicion estable por institucion
+- Orden de universidades por porcentaje del grupo AB para comparar mejor
 
-## Imagen (output)
-> Export del gráfico principal (generado desde el notebook):
+## Grafico principal
+<img src="regunta3.png" alt="Distribucion socioeconomica por universidad" width="900">
 
-![Distribución AB–E por universidad](pregunta3.png)
+## Metodologia
+1. Desde el campo ingreso familiar extraje un tramo numerico entre 1 y 12
+2. Agrupe tramos en cuatro grupos socioeconomicos
+   - 1 a 2 corresponde a E
+   - 3 a 4 corresponde a D
+   - 5 a 8 corresponde a C
+   - 9 a 12 corresponde a AB
+3. Para cada universidad conte estudiantes por grupo
+4. Transforme los conteos a porcentajes de modo que por universidad suma 100
+5. Promedie los resultados en el periodo 2004 a 2025
+6. Ordene universidades por porcentaje del grupo AB de mayor a menor
 
-*(Si cambias la carpeta, ajusta la ruta. Recomendado: `assets/` o `graficos-imagenes/`.)*
+## Interpretacion y conclusión
+El grafico muestra para cada universidad el porcentaje de estudiantes matriculados que pertenecen a cada grupo socioeconomico AB C D E  
+Se observa una fuerte desigualdad  
+Las universidades mas selectivas y privadas concentran una mayor proporcion de estudiantes en los grupos AB y C  
+Muchas universidades tienen mayoria de estudiantes en los grupos D y E  
+Esto se mantiene casi igual durante el periodo 2004 a 2025  
+El acceso universitario sigue estando fuertemente asociado al nivel de ingreso familiar
 
-## Qué hice yo (mi aporte)
-### 1) Pregunta 3 — Distribución socioeconómica por universidad (GSE)
-Analicé cómo se distribuyen los estudiantes que ingresan a educación superior según grupo socioeconómico **AB / C / D / E** usando el campo **ingreso familiar** disponible en datos DEMRE entre **2004 y 2025**.
-
-**Metodología (resumen):**
-- Extracción del tramo numérico **1–12** desde “ingreso familiar”.
-- Agrupación a GSE:
-  - **1–2 → E**
-  - **3–4 → D**
-  - **5–8 → C**
-  - **9–12 → AB**
-- Conteo por universidad y conversión a **porcentaje** (100% por universidad).
-- Ordenado por **%AB** para comparar instituciones.
-
-> Nota: En el repositorio grupal se indica que **Pregunta 3** fue mi responsabilidad.
-
-### 2) Modelo predictivo / regresiones (apoyo)
-Participé en el notebook de modelamiento y comparación de regresiones (**lineal vs polinomial**).  
-En el sitio del proyecto se reporta la comparación y se concluye que el mejor modelo es el **polinomial grado 3**, con métricas aproximadas (**R² test ≈ 0.2735; RMSE ≈ 118.49; MAE ≈ 96.06**).
-
-## Estructura del repo
-- `notebooks/`
-  - `Pregunta3.ipynb` (mi notebook principal)
-  - `Modelo_Predictivo_NEM_ff.ipynb` (apoyo modelamiento)
-- `requirements.txt`
-- `graficos-imagenes/` (exports de gráficos)
-  - `pregunta3.png`
+## Archivos
+- notebooks/Pregunta3.ipynb
+- requirements.txt
+- graficos-imagenes/pregunta3.png
 
 ## Datos
-Los datos se obtienen desde **DEMRE (Portal de Transparencia)** o desde el link compartido por el equipo en el repo oficial.  
-Este repo **no incluye datasets** (solo código/análisis).
+Los datos se obtienen desde DEMRE Portal de Transparencia o desde el link compartido por el equipo en el repositorio grupal  
+Este repositorio no incluye datasets solo codigo y analisis
 
-## Cómo ejecutar (rápido)
+## Como ejecutar
 ```bash
 pip install -r requirements.txt
 jupyter notebook
