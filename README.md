@@ -1,49 +1,70 @@
-# Pregunta 3 Distribucion socioeconomica por universidad con DEMRE 2004 a 2025
+# Distribución socioeconómica por universidad (DEMRE 2004–2025)
 
-Proyecto academico grupal IMT 2200  
-Este repositorio resume mi aporte en la Pregunta 3
+**Proyecto académico grupal – IMT 2200**  
+Este repositorio documenta mi aporte individual a la **Pregunta 3** del proyecto.
 
-## Resumen
-Analice como se distribuyen los estudiantes que ingresan a la educacion superior segun grupo socioeconomico usando ingreso familiar en datos DEMRE entre 2004 y 2025
+---
 
-## Highlights
-- Distribucion porcentual por universidad para los grupos AB C D E
-- Promedio del periodo 2004 a 2025 para ver una composicion estable por institucion
-- Orden de universidades por porcentaje del grupo AB para comparar mejor
+## Descripción
+Análisis de la distribución de estudiantes que ingresan a la educación superior según su **grupo socioeconómico (GSE)**, utilizando información de **ingreso familiar** proveniente de bases de datos del **DEMRE**, para el período **2004–2025**.
 
-## Grafico principal
-<img src="pregunta3.png" alt="Distribucion socioeconomica por universidad" width="900">
+El objetivo es identificar patrones estructurales de acceso a la educación superior y comparar la composición socioeconómica entre universidades.
 
-## Metodologia
-1. Desde el campo ingreso familiar extraje un tramo numerico entre 1 y 12
-2. Agrupe tramos en cuatro grupos socioeconomicos
-   - 1 a 2 corresponde a E
-   - 3 a 4 corresponde a D
-   - 5 a 8 corresponde a C
-   - 9 a 12 corresponde a AB
-3. Para cada universidad conte estudiantes por grupo
-4. Transforme los conteos a porcentajes de modo que por universidad suma 100
-5. Promedie los resultados en el periodo 2004 a 2025
-6. Ordene universidades por porcentaje del grupo AB de mayor a menor
+---
 
-## Interpretacion y conclusión
-El grafico muestra para cada universidad el porcentaje de estudiantes matriculados que pertenecen a cada grupo socioeconomico AB C D E  
-Se observa una fuerte desigualdad  
-Las universidades mas selectivas y privadas concentran una mayor proporcion de estudiantes en los grupos AB y C  
-Muchas universidades tienen mayoria de estudiantes en los grupos D y E  
-Esto se mantiene casi igual durante el periodo 2004 a 2025  
-El acceso universitario sigue estando fuertemente asociado al nivel de ingreso familiar
+## Principales resultados
+- Distribución porcentual por universidad para los grupos **AB, C, D y E**  
+- Promedio del período **2004–2025**, lo que permite observar una composición socioeconómica estable por institución  
+- Ordenamiento de universidades según el porcentaje del grupo **AB**, facilitando la comparación entre instituciones  
 
-## Archivos
-- notebooks/Pregunta3.ipynb
-- requirements.txt
-- graficos-imagenes/pregunta3.png
+---
 
-## Datos
-Los datos se obtienen desde DEMRE Portal de Transparencia o desde el link compartido por el equipo en el repositorio grupal  
-Este repositorio no incluye datasets solo codigo y analisis
+## Visualización principal
+<p align="center">
+  <img src="pregunta3.png" alt="Distribución socioeconómica por universidad" width="900">
+</p>
 
-## Como ejecutar
+---
+
+## Metodología
+1. A partir del campo de **ingreso familiar**, se extrajo un tramo numérico entre **1 y 12**  
+2. Los tramos se agruparon en cuatro grupos socioeconómicos:  
+   - **1–2 → E**  
+   - **3–4 → D**  
+   - **5–8 → C**  
+   - **9–12 → AB**  
+3. Para cada universidad, se contabilizaron los estudiantes por grupo socioeconómico  
+4. Los conteos se transformaron en **porcentajes**, de modo que cada universidad suma 100 %  
+5. Los resultados se promediaron para el período **2004–2025**  
+6. Las universidades se ordenaron según el porcentaje del grupo **AB**, de mayor a menor  
+
+---
+
+## Interpretación y conclusiones
+Los resultados evidencian una **fuerte desigualdad socioeconómica** en el acceso a la educación superior.  
+
+Las universidades más selectivas y privadas concentran una mayor proporción de estudiantes pertenecientes a los grupos **AB y C**, mientras que en muchas otras instituciones predomina la matrícula de estudiantes de los grupos **D y E**.  
+
+Este patrón se mantiene de forma consistente durante todo el período analizado (**2004–2025**), lo que sugiere que el acceso universitario en Chile continúa estando **fuertemente asociado al nivel de ingreso familiar**.
+
+---
+
+## Estructura del repositorio
+notebooks/Pregunta3.ipynb
+requirements.txt
+graficos-imagenes/pregunta3.png
+
+
+---
+
+## Fuente de datos
+Los datos utilizados provienen del **DEMRE**, obtenidos a través del **Portal de Transparencia** y del enlace compartido por el equipo en el repositorio grupal.  
+
+Este repositorio **no incluye datasets**, únicamente código y análisis reproducible.
+
+---
+
+## Ejecución
 ```bash
 pip install -r requirements.txt
 jupyter notebook
